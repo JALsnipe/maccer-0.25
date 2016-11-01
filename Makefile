@@ -15,7 +15,6 @@ all: $(BIN)
 
 $(BIN): $(OBJS)
 	$(CC) $(LDFLAGS) -o $(BIN) $(OBJS)
-	doc++ -d html $(BIN).c
 
 clean:
 	rm -f $(BIN) $(BIN).exe $(OBJS) *~
